@@ -1,0 +1,19 @@
+package operator;
+import java.util.Scanner;
+
+public class DistanceConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the distance in feet:");
+        double distanceInFeet = scanner.nextDouble();
+
+        double distanceInYards = distanceInFeet / 3;
+        double distanceInMiles = distanceInYards / 1760;
+
+        System.out.printf("The distance of %.2f feet is equivalent to %.2f yards and %.2f miles.%n", 
+                           distanceInFeet, distanceInYards, distanceInMiles);
+
+        scanner.close();
+    }
+}
